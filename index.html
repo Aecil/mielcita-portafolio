@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Portafolio - María Paulina Pachecho Lora</title>
+    <meta name="description" content="Portafolio académico y reflexión de María Paulina Pachecho Lora">
+    <style>
+        :root {
+            --accent: #ff6fb1;
+            --bg: #fdf2f8;
+            --card: #ffffff;
+            --text: #4a0e2e;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.5;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--accent), #ff9acb);
+            color: #fff;
+            padding: 48px 20px;
+            opacity: 0;
+            animation: fadeInHeader 1.5s ease forwards;
+        }
+
+        .container { max-width: 980px; margin: 0 auto; padding: 24px; }
+
+        h1 { margin: .2rem 0; font-size: 32px; font-weight: 700; }
+        p.lead { opacity: .95; margin: 0 0 12px; }
+
+        nav { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 12px; }
+
+        .btn {
+            background: rgba(255, 255, 255, .25);
+            border: 0;
+            padding: 8px 12px;
+            border-radius: 10px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+        main { padding: 28px 0; }
+
+        section.card {
+            background: var(--card);
+            border-radius: 14px;
+            padding: 22px;
+            margin: 18px 0;
+            box-shadow: 0 6px 20px rgba(200, 60, 130, 0.12);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        section.card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(200, 60, 130, 0.18);
+        }
+
+        .grid { display: grid; grid-template-columns: 1fr; gap: 18px; }
+        @media(min-width:800px) { .grid { grid-template-columns: 1fr 1fr; } }
+
+        .meta { font-size: 14px; color: #7a3b63; }
+        footer { padding: 24px 0; text-align: center; color: #7a3b63; font-size: 14px; }
+
+        ul { padding-left: 1.1rem; }
+        .small { font-size: 14px; color: #7a3b63; }
+
+        /* Animaciones */
+        .fade-in { opacity: 0; animation: fadeIn 1.2s ease forwards; }
+        .slide-up { opacity: 0; transform: translateY(20px); animation: slideUp 1s ease forwards; }
+
+        @keyframes fadeIn { to { opacity: 1; } }
+        @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeInHeader { to { opacity: 1; } }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>María Paulina Pachecho Lora</h1>
+            <p class="lead">Portafolio de curso — Reflexión, plan de mejora y evidencias.</p>
+            <nav>
+                <a class="btn" href="#bio">Biografía</a>
+                <a class="btn" href="#plan">Plan de mejora</a>
+                <a class="btn" href="#filosofia">Filosofía</a>
+                <a class="btn" href="#reunion">Reunión</a>
+                <a class="btn" href="#ensayo">Ensayo</a>
+                <a class="btn" href="#reflexion">Reflexión</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="bio" class="card fade-in">
+            <h2>Biografía</h2>
+            <p class="meta">Nombre: <strong>María Paulina Pachecho Lora</strong> &nbsp;|&nbsp; Rol: Estudiante</p>
+            <p>Soy María Paulina Pachecho Lora, estudiante dedicada al crecimiento académico y personal, con especial interés en la enseñanza, la comunicación y el desarrollo humano. Disfruto trabajar en ambientes colaborativos y en proyectos que permitan explorar nuevas formas de aprender y compartir conocimiento.</p>
+            <p class="small">Este texto puede personalizarse con formación académica, intereses o datos de contacto.</p>
+        </section>
+
+        <section id="plan" class="card slide-up">
+            <h2>Plan de mejora personal</h2>
+            <div class="grid">
+                <div>
+                    <h3>Objetivos</h3>
+                    <ul>
+                        <li>Perfeccionar mis habilidades de comunicación y enseñanza.</li>
+                        <li>Dominar herramientas digitales educativas (Moodle, OBS, edición básica de video).</li>
+                        <li>Redactar un ensayo descriptivo y elaborar una reflexión final en video.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li>Cursos en línea sobre pedagogía y comunicación.</li>
+                        <li>Guías de edición y producción audiovisual básica.</li>
+                        <li>Acompañamiento docente y retroalimentación continua.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
