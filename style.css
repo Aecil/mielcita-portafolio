@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: #ffcc00;
+  color: #d4d1cb;
 }
 
 nav {
@@ -27,7 +27,7 @@ nav {
 }
 
 .logo {
-  color: #ffcc00;
+  color: #ffffff;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -51,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffcc00;
+  color: #d4d1cb;   
 }
 
 .hamburger {
@@ -173,6 +173,16 @@ nav ul li a:hover {
   flex-direction: column;  
 }
 
+@media (max-width: 768px) {
+  #video-link {
+    padding: 20px;
+  }
+
+  #video-link h1 {
+    font-size: 24px;
+  }
+}
+
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
@@ -186,7 +196,7 @@ nav ul li a:hover {
 }
 
 .hero a {
-  background-color: #ffcc00;
+  background-color: white;
   color: #333;
   padding: 12px 25px;
   text-decoration: none;
