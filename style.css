@@ -26,6 +26,14 @@ nav {
   position: relative;
 }
 
+.text-color {
+  color: #980000 !important;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .logo {
   color: #ffffff;
   font-size: 20px;
